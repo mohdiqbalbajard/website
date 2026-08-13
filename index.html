@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+  Iqbal Global Group — Single-page edition (v2, 13 Aug 2026)
+  Static, no JavaScript. Centre-aligned throughout.
+  Domain inserted 13 Aug 2026: iqbalglobalgroup.com — no placeholders remain.
+  Section 9 of the brief governs all content on this page.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iqbal Global Group — Rooted in Kashmir. At work in the world.</title>
+  <meta name="description" content="Iqbal Global Group is a Kashmir-rooted institution running back-office operations for American freight from Kupwara, Jammu &amp; Kashmir. Founded 2026. Built for generations.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Iqbal Global Group">
+  <meta property="og:title" content="Iqbal Global Group — Rooted in Kashmir. At work in the world.">
+  <meta property="og:description" content="A Kashmir-rooted institution running back-office operations for American freight from Kupwara, Jammu &amp; Kashmir. Founded 2026. Built for generations.">
+  <meta property="og:url" content="https://iqbalglobalgroup.com/">
+  <link rel="canonical" href="https://iqbalglobalgroup.com/">
+  <meta name="theme-color" content="#F5F1E6">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="%231C4632"/><text x="32" y="45" font-family="Georgia, serif" font-size="38" fill="%23F5F1E6" text-anchor="middle">I</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ivory:#F5F1E6;
+      --ink:#23201A;
+      --green:#1C4632;
+      --green-deep:#12301F;
+      --muted:#6A6455;
+      --rule:#DDD5C2;
+      --serif:"Libre Caslon Text", Georgia, "Times New Roman", serif;
+      --sans:"Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      background:var(--ivory);
+      color:var(--ink);
+      font-family:var(--sans);
+      font-size:1.0625rem;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:71rem;margin-inline:auto;padding-inline:1.375rem}
+    a{color:var(--green)}
+    a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+    [id]{scroll-margin-top:1.25rem}
+
+    /* Masthead */
+    .site-head{border-bottom:1px solid var(--rule)}
+    .site-head .wrap{padding-block:1.4rem;text-align:center}
+    .wordmark{
+      font-family:var(--serif);font-weight:700;
+      font-size:clamp(1.05rem,3vw,1.3rem);letter-spacing:.13em;
+      text-transform:uppercase;color:var(--ink);
+      text-decoration:none;white-space:nowrap;
+    }
+
+    /* Hero */
+    .hero{padding-block:clamp(4.25rem,11vw,7rem) clamp(3.25rem,8vw,5.25rem);text-align:center}
+    .eyebrow{
+      font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--green);font-weight:500;
+    }
+    h1{
+      font-family:var(--serif);font-weight:400;
+      font-size:clamp(2.35rem,6.4vw,4.05rem);
+      line-height:1.12;letter-spacing:-.005em;
+      max-width:17ch;margin:1.1rem auto 0;
+    }
+    .lede{
+      max-width:56ch;margin:1.6rem auto 0;
+      font-size:clamp(1.08rem,2.2vw,1.2rem);color:#3C382D;
+    }
+
+    /* Ridgeline motif */
+    .ridge{display:block;width:100%;height:74px;color:var(--green)}
+    .ridge.faint{opacity:.55}
+
+    /* Sections */
+    .section{padding-block:clamp(3.5rem,9vw,5.75rem);text-align:center}
+    .ruled{border-top:1px solid var(--rule)}
+    .sec-head{
+      font-family:var(--serif);font-weight:400;
+      font-size:clamp(1.75rem,4.5vw,2.3rem);line-height:1.2;
+    }
+    .sec-head::before{
+      content:"";display:block;width:2.4rem;height:2px;
+      background:var(--green);margin:0 auto 1.2rem;
+    }
+    .prose{max-width:58ch;margin:1.25rem auto 0;color:#3F3B30}
+    .signature{margin-top:2.5rem;font-family:var(--serif);font-size:1.15rem}
+    .signature span{
+      display:block;margin-top:.35rem;font-family:var(--sans);
+      font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+    }
+
+    /* What we do */
+    .work-grid{
+      display:grid;gap:2.5rem 3rem;grid-template-columns:1fr;
+      margin-top:2.75rem;
+    }
+    @media(min-width:700px){.work-grid{grid-template-columns:repeat(2,1fr)}}
+    .card{text-align:center}
+    .card::before{
+      content:"";display:block;width:2.4rem;height:2px;
+      background:var(--green);margin:0 auto 1.05rem;
+    }
+    .card h3{
+      font-family:var(--serif);font-weight:400;
+      font-size:1.3rem;line-height:1.3;
+    }
+    .card p{margin-top:.7rem;color:#4A463A;font-size:.98rem}
+
+    /* Careers */
+    .ladder{
+      font-family:var(--serif);
+      font-size:clamp(1.05rem,3vw,1.4rem);
+      margin-top:2.1rem;line-height:2;
+    }
+    .ladder .arr{color:var(--green);padding:0 .45em}
+
+    /* Cornerstone */
+    .cornerstone{background:var(--green-deep);color:var(--ivory)}
+    .cornerstone .wrap{
+      padding-block:clamp(4rem,10vw,6.25rem);
+      text-align:center;
+    }
+    .cornerstone p.line{
+      font-family:var(--serif);
+      font-size:clamp(1.45rem,3.6vw,2.1rem);
+      line-height:1.45;max-width:30ch;margin-inline:auto;
+    }
+    .cornerstone p.mark{
+      margin-top:2.2rem;font-size:.78rem;letter-spacing:.24em;
+      text-transform:uppercase;color:#C9CDB9;
+    }
+
+    /* Footer / Contact */
+    .site-foot{border-top:1px solid var(--rule)}
+    .site-foot .wrap{padding-block:3rem 2.25rem}
+    .contact-head{
+      font-family:var(--serif);font-weight:400;font-size:1.5rem;
+      color:var(--ink);text-align:center;margin-bottom:2rem;
+    }
+    .contact-head::before{
+      content:"";display:block;width:2.4rem;height:2px;
+      background:var(--green);margin:0 auto 1.05rem;
+    }
+    .foot-grid{
+      display:grid;gap:2rem;grid-template-columns:1fr;text-align:center;
+      font-size:.88rem;color:var(--muted);line-height:1.75;
+    }
+    @media(min-width:800px){.foot-grid{grid-template-columns:1fr 1fr}}
+    .foot-grid h3{
+      font-family:var(--serif);font-weight:400;font-size:.95rem;
+      color:var(--ink);letter-spacing:.06em;margin-bottom:.4rem;
+    }
+    .placeholder{color:#8A8371;font-style:italic}
+    .colophon{
+      margin-top:2.25rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+      font-size:.8rem;color:#8A8371;
+      display:flex;flex-wrap:wrap;gap:.3rem 1.5rem;justify-content:center;text-align:center;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <header class="site-head">
+    <div class="wrap">
+      <a class="wordmark" href="#top">Iqbal Global Group</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Est. 2026 &middot; Kupwara, Jammu &amp; Kashmir</p>
+        <h1>Rooted in Kashmir. At&nbsp;work in the world.</h1>
+        <p class="lede">
+          From Kupwara, our people keep the operations of American freight moving —
+          coordinated, documented, and answered for, through the night. Iqbal Global
+          Group is built on one conviction: that the valley can raise institutions
+          which serve the world, and that an institution, well kept, can serve
+          for generations.
+        </p>
+      </div>
+    </section>
+
+    <svg class="ridge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" role="presentation">
+      <path d="M0,64 L90,44 L150,56 L240,30 L320,52 L410,38 L470,50 L560,24 L640,48 L730,36 L820,54 L910,30 L990,50 L1080,40 L1170,56 L1260,34 L1340,50 L1440,42"
+            fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.32" vector-effect="non-scaling-stroke"/>
+      <path d="M0,78 L70,60 L130,70 L210,48 L280,66 L360,52 L450,72 L540,44 L620,64 L700,56 L790,74 L870,50 L950,68 L1040,58 L1120,72 L1210,52 L1290,66 L1370,60 L1440,68"
+            fill="none" stroke="currentColor" stroke-width="2" opacity="0.9" vector-effect="non-scaling-stroke"/>
+    </svg>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2 class="sec-head">Our story</h2>
+        <p class="prose">
+          Iqbal Global Group was founded in 2026 at Kupwara, Jammu &amp; Kashmir, on a
+          plain conviction: that the young talent of the valley, properly trained and
+          honestly led, can run world-class operations for the world's largest
+          freight market.
+        </p>
+        <p class="prose">
+          The Group works through two companies in concert: Iqbal Outsourcing India
+          Private Limited, the operating company at Kupwara where the work is done,
+          and Iqbal Outsourcing LLC of Wyoming, United States, which faces the
+          American market we serve.
+        </p>
+        <p class="prose">
+          The Group is led by its founding Managing Director, Mohd Iqbal Bajard.
+        </p>
+        <p class="prose">
+          We are not a venture chasing a season. We are an institution planning in
+          decades — built to outlast its founders, and bound by its own rule to keep
+          changing, adapting, and improving without end.
+        </p>
+        <p class="signature">Mohd Iqbal Bajard<span>Managing Director</span></p>
+      </div>
+    </section>
+
+    <section class="section ruled" id="work">
+      <div class="wrap">
+        <h2 class="sec-head">What we do</h2>
+        <p class="prose">
+          Back-office operations for American freight, run from Kupwara on America's
+          clock — through the US working day and deep into its night.
+        </p>
+        <div class="work-grid">
+          <article class="card">
+            <h3>After-hours coverage</h3>
+            <p>Dependable coverage across American hours, so operations never wait for morning.</p>
+          </article>
+          <article class="card">
+            <h3>Carrier sales support</h3>
+            <p>Calls answered, follow-ups kept, relationships maintained — professional support, every day.</p>
+          </article>
+          <article class="card">
+            <h3>Load coordination &amp; tracking</h3>
+            <p>Every load coordinated and tracked from pickup to delivery, with no silence in between.</p>
+          </article>
+          <article class="card">
+            <h3>Documentation &amp; settlement support</h3>
+            <p>Paperwork kept clean to the last line, so that every file closes properly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ruled" id="careers">
+      <div class="wrap">
+        <h2 class="sec-head">Careers</h2>
+        <p class="prose">
+          Every senior seat in this house has been earned, not imported. We hire
+          promising young people of Kashmir, train them thoroughly, and promote
+          strictly from within — and each milestone on the ladder is celebrated as
+          an achievement of the whole institution.
+        </p>
+        <p class="ladder">
+          Agent <span class="arr">&rarr;</span> Team Manager
+          <span class="arr">&rarr;</span> Operations Manager
+          <span class="arr">&rarr;</span> International opportunities
+        </p>
+        <p class="prose">
+          The work runs on America's clock — an evening-to-night shift from Kupwara,
+          serving the American market in its own hours. Training is provided from the
+          first day; earning is commission-based, with every milestone recognised and
+          celebrated. We ask for character, discipline, and the hunger to learn.
+          We offer a ladder with no ceiling.
+        </p>
+        <p class="prose">
+          To apply, write to us at
+          <a href="mailto:iqbaloutsourcingindia@gmail.com">iqbaloutsourcingindia@gmail.com</a> or
+          <a href="mailto:iqbaloutsourcingusa@gmail.com">iqbaloutsourcingusa@gmail.com</a>
+          with a few honest lines about yourself: who you are, what you have done,
+          and what you intend to become.
+        </p>
+      </div>
+    </section>
+
+    <section class="cornerstone">
+      <div class="wrap">
+        <p class="line">Members change. Leaders change.<br>The institution endures — and keeps improving.</p>
+        <p class="mark">Iqbal Global Group</p>
+      </div>
+    </section>
+  </main>
+
+  <svg class="ridge faint" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" role="presentation">
+    <path d="M0,70 L110,52 L190,62 L290,40 L380,60 L480,46 L570,64 L660,42 L750,58 L850,48 L940,66 L1040,44 L1130,60 L1230,50 L1320,64 L1440,52"
+          fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.5" vector-effect="non-scaling-stroke"/>
+  </svg>
+
+  <footer class="site-foot" id="contact">
+    <div class="wrap">
+      <h2 class="contact-head">Contact</h2>
+      <div class="foot-grid">
+        <div>
+          <h3>Iqbal Outsourcing India Private Limited</h3>
+          CIN: U82990JK2026PTC018598<br>
+          Registered Office: Kachhama, Kupwara,<br>
+          Jammu &amp; Kashmir 193224, India<br>
+          <a href="mailto:iqbaloutsourcingindia@gmail.com">iqbaloutsourcingindia@gmail.com</a><br>
+          <a href="tel:+918054468054">+91 80544 68054</a>
+        </div>
+        <div>
+          <h3>Iqbal Outsourcing LLC</h3>
+          Registered Office: 30 N Gould St, STE R,<br>
+          Sheridan, Wyoming 82801, United States<br>
+          <a href="mailto:iqbaloutsourcingusa@gmail.com">iqbaloutsourcingusa@gmail.com</a><br>
+          <a href="tel:+13072002774">+1 307 200 2774</a>
+        </div>
+      </div>
+      <div class="colophon">
+        <span>&copy; 2026 Iqbal Global Group. All rights reserved.</span>
+        <span>Rooted in Kashmir. At work in the world.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
